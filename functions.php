@@ -65,7 +65,7 @@ function show_extra_profile_fields( $user ) {
 add_action( 'user_profile_update_errors', 'user_profile_update_errors', 10, 3 );
 function user_profile_update_errors( $errors, $update, $user ) {
 	if ( empty( $_POST['position'] ) ) {
-		$errors->add( 'position_error', __( '<strong>ERROR</strong>: Please enter your Position.', 'crf' ) );
+		$errors->add( 'position_error', __( '<strong>ERROR</strong>: Please enter your Position.', 'vhm' ) );
 	}
 }
 
